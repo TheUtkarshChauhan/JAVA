@@ -1,0 +1,25 @@
+import java.util.*;
+
+
+
+
+public class MyClass {
+    // using Throw
+    public static void main(String args[]) {
+      // Exception Handeling
+      System.out.println("Implementing Exception class");
+      try{
+          throw new demo ("Amity");
+          
+        
+      }
+      catch(demo d){
+          System.out.println("Exception");
+      }
+    }
+}
+class demo extends Exception {
+    demo(String S){
+        super("s");
+    }
+}
