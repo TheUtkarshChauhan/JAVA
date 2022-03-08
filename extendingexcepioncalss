@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class MyClass {
+    //using function to throw exception in classes
+    
+    public static void main(String args[]) {
+     try{
+         test t1 = new test();
+         t1.check(10);
+     }
+     catch(demo d){
+     System.out.println(d);
+    }
+}
+class demo extends Exception{
+    private int num;
+    demo(int a){
+        
+         num =a;   
+        }
+        public String toString(int a){
+            return "Demo thrown with " + num;
+    }
+}
+class test{
+    static void check(int x ) throws demo 
+    {
+        System.out.println("check called " + x);
+        if(x<0){
+            throw new demo(x);
+            System.out.println("Return");
+        }
+    }
+}
