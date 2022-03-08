@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner obj = new Scanner(System.in);
+      System.out.println("Exception handeling");
+      try{
+          int a ,b,temp;
+          System.out.println("Enter varibles 1St and 2nd");
+          a= obj.nextInt();
+          b= obj.nextInt();
+          temp = a/b;
+          
+      }
+      catch(Exception e){
+          System.out.println("Arithmetic Exception Occured");
+      }
+    }
+}
